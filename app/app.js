@@ -1,6 +1,6 @@
 var app = angular.module('theHomeLife', ['ngRoute'])
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider ) {
 // $httpProvider.defaults.headers.common('Access-Control-Allow-Headers') = *;
 // $httpProvider.interceptors.push('httpRequestInterceptor')
 

@@ -11,11 +11,11 @@ this.getData = function(userSearch) {
 	})
 }
 
-this.getRecipe = function(first, second, third, fourth, fifth, sixth) {
-var arr = [first, second, third, fourth, fifth, sixth]
-console.log(arr)
+this.getRecipe = function(first, second, third) {
+// var arr = [first, second, third, fourth, fifth, sixth]
+// console.log(arr)
 var recipeID = ''
-var random =  Math.floor((Math.random() * arr.length) + 1);
+// var random =  Math.floor((Math.random() * arr.length) + 1);
 
 // if (random === 1) {
 // 	recipeID = arr[0]
@@ -35,13 +35,21 @@ var random =  Math.floor((Math.random() * arr.length) + 1);
 // if (random === 6) {
 // 	recipeID = arr[5]
 // }
-
+console.log(first, second)
 
 	
 	return $http({
 		method:'GET',
 		url:'http://api.bigoven.com/recipe/' + first + '?api_key=dvx51ehi7INBAt70is6nz04gOvJmD4lt'
+
 	})
+
+	return $http({
+		method:'GET',
+		url:'http://api.bigoven.com/recipe/' + second + '?api_key=dvx51ehi7INBAt70is6nz04gOvJmD4lt'
+	})
+
+	
 }
 
 

@@ -54,18 +54,18 @@ h2 {
  	z-index: 1;
  	
  }
- .ingredients {
+ .firstIngredients {
 border: 1px solid black;
-	width: 35%;
-	height: 500px;
+	width: 40%;
+	height: 200px;
 	overflow: auto;
 background-color: red;
 float: left;
 }
 
  .calendar-container {
- width: 35%;
- height: 500px;
+ width: 40%;
+ height: 200px;
 float: left;
 /*margin: 0 auto;*/
 border: 1px solid black;
@@ -78,8 +78,41 @@ overflow: auto;
 
 }
 
+ .secondIngredients {
+border: 1px solid black;
+	width: 40%;
+	height: 200px;
+	overflow: auto;
+background-color: red;
+float: left;
+}
+ .secondImage {
+ 	position:relative;
+height: 200px;
+width: 20%;
+ border: 1px solid black;
+ margin: 0;
+float: left;
+}
+.secondImage > img {
+	height: 100%;
+	width: 100%;
+}
 
+ .secondInstructions{
+ width: 40%;
+ height: 200px;
+float: left;
+/*margin: 0 auto;*/
+border: 1px solid black;
+/*display: flex;
+box-sizing: border-box;
+flex-direction: row;
+flex-wrap: wrap;*/
+background-color: white;
+overflow: auto;
 
+}
 
 
  .top {

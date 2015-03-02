@@ -8,27 +8,27 @@
 
 
 </div>
-
+ 
 <div class='mainContainer'>
-	<div class='ingredients'>
-		<h1>{{title}}</h1>
-		<h2>Ingredients</h2>
-		<h6>Star Rating: {{starRating}}</h6>
-		<h6>Total Reviews: {{reviews}}</h6>
-		<h4> Servings: {{servings}}</h4>
-		<ul ng-repeat='items in food'>
-			<li>{{items.Name}} {{items.Quantity}} {{items.Unit}} </li>
+	<div class='firstIngredients'>
+		<h1>{{firstTitle}}</h1>
+		<h2>firstIngredients</h2>
+		<h6>Star Rating: {{firstStarRating}}</h6>
+		<h6>Total Reviews: {{firstReviews}}</h6>  
+		<h4> Servings: {{firstServings}}</h4>
+		<ul ng-repeat='firstItems in firstIngredients'>
+			<li>{{firstItems.Name}} {{firstItems.Quantity}} {{firstItems.Unit}} </li>
 	
 		</ul>
 	</div>
 
 <div class='image'> 
-	<img ng-src='{{image}}'>
+	<img ng-src='{{firstImage}}'>
 </div>
 
 <div class='calendar-container'>
-		<h4> Time: {{time}} mins </h4>
-		{{instructions}}
+		<h4> Time: {{firstTime}} mins </h4>
+		{{firstInstructions}}
 
 
 <!-- 	<div class='top monday'>Monday</div>
@@ -62,8 +62,25 @@
 	<div class='day six_dinner'></div>
 	<div class='day seven_dinner'></div> -->
 </div>
+<div class='secondIngredients'>
+		<h1>{{secondTitle}}</h1>
+		<h2>Ingredients</h2>
+		<h6>Star Rating: {{secondStarRating}}</h6>
+		<h6>Total Reviews: {{secondStarReviews}}</h6>  
+		<h4> Servings: {{servings}}</h4>
+		<ul ng-repeat='secondItems in secondIngredients'>
+			<li>{{secondItems.Name}} {{secondItems.Quantity}} {{secondItems.Unit}} </li>
+	
+		</ul>
+	</div>
+<div class='secondImage'> 
+	<img ng-src='{{secondImage}}'>
+</div>
 
-
+<div class='secondInstructions'>
+		<h4> Time: {{secondTime}} mins </h4>
+		{{secondInstructions}}
+</div>
 </div>
 <!-- Title: "Pancakes"TotalMinutes: 10VariantOfRecipeID: nullVerifiedByClass: "helper"VerifiedDateTime: "/Date(1411668622087)/"WebURL: "http://www.bigoven.com/recipe/pancakes/819409"YieldNumber: 4YieldUnit: "Servings" -->
 
